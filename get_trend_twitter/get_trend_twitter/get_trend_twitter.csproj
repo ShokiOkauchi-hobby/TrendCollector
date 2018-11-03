@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B5C0FD5C-7578-4473-960B-36B83BDCC974}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>get_trend_twitter</RootNamespace>
-    <AssemblyName>get_trend_twitter</AssemblyName>
+    <RootNamespace>get_trend</RootNamespace>
+    <AssemblyName>get_trend</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

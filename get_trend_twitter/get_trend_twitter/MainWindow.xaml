@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:get_trend_twitter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="540" Width="960">
     <Grid>
-        
+        <Grid Margin="0,0,0,409">
+            <Label x:Name="Title" Content="trend"  Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontWeight="Bold"/>
+        </Grid>
+        <Grid x:Name="GoogleTrend" Margin="0,100,476,0"/>
+        <Grid x:Name="TwitterTrend" Margin="476,105,0,0"/>
     </Grid>
 </Window>
