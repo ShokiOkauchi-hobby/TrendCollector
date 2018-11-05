@@ -23,6 +23,14 @@ namespace get_trend_twitter
         public MainWindow()
         {
             InitializeComponent();
+            CreateBrowser();
+        }
+        private void CreateBrowser()
+        {
+            var appDir = Environment.CurrentDirectory;
+            var browser = new CefSharp.Wpf.ChromiumWebBrowser();
+            browser.Address = "https://trends.google.co.jp/trends/?geo=JP";
+            TrendBrowser.Children.Add(browser);
         }
     }
 }
