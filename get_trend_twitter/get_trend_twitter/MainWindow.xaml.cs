@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace get_trend_twitter
 {
@@ -24,7 +25,17 @@ namespace get_trend_twitter
         {
             InitializeComponent();
             CreateBrowser();
+            GetPoint();
         }
+
+        private void GetPoint()
+        {
+            SizeChanged += (sender, args) =>
+            {
+                wide.Content = "Width: " + ActualWidth.ToString();
+            };
+        }
+
         private void CreateBrowser()
         {
             var appDir = Environment.CurrentDirectory;
